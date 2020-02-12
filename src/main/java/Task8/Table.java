@@ -3,9 +3,9 @@ package Task8;
 public class Table {
 
 
-    int legs = 3;
-    String name = "Stol";
-    double weight = 3.5;
+    private int legs;
+    private String name;
+    private double weight;
 
     public Table() {
     }
@@ -13,6 +13,30 @@ public class Table {
     public Table(int legs, String name, double weight) {
         this.legs = legs;
         this.name = name;
+        this.weight = weight;
+    }
+
+    private int getLegs() {
+        return legs;
+    }
+
+    public void setLegs(int legs) {
+        this.legs = legs;
+    }
+
+    private String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
